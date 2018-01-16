@@ -10,6 +10,7 @@
     "gatsby-plugin-typography": "^1.7.10",
     "react-helmet": "^5.2.0",
     "typography-theme-bootstrap": "^0.16.7",
+    "typography-theme-fairy-gates": "^0.15.11",
     "typography-theme-lawton": "^0.15.10"
   },
   "keywords": [
