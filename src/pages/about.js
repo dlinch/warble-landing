@@ -1,8 +1,20 @@
-import React from 'react';
+import React from "react";
 
-export default () => (
+export default ({ data }) =>
   <div>
-    <h1>About Me</h1>
-    <p>I'm good enough, I'm smart enough, and gosh darn it, people me!</p>
+    <h1>About {data.site.siteMetadata.title}</h1>
+    <p>
+      We're the only site running on your computer dedicated to showing the best
+      photos and videos of pandas eating lots of food.
+    </p>
   </div>
-)
+
+export const query = graphql`
+  query AboutQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
